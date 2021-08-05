@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply from: '../script_aar_deployment.gradle'
 
 android {
 
@@ -11,7 +12,7 @@ android {
         targetSdkVersion 30
 
         versionCode 1
-        versionName ".0.0.0.1"
+        versionName "0.0.0.0"
     }
 
     lintOptions {
@@ -77,7 +78,7 @@ dependencies {
     //******************************************************
 
     //RDA-LOGGER
-    compileOnly "com.github.ardakaplan:RDALogger:2.0.1"
+    compileOnly "com.github.ardakaplan:RDALogger:2.0.2"
 
     //RDA TOAST
     compileOnly 'com.github.ardakaplan:RDAToast:53cd34ec48'

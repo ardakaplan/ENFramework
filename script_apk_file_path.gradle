@@ -1,6 +1,6 @@
 task copyDebugApk(type: Copy) {
 
-    Properties properties = new Properties()//
+    Properties properties = new Properties()
 
     properties.load(project.rootProject.file('local.properties').newDataInputStream())
 

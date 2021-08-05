@@ -17,9 +17,9 @@ android {
         versionCode 1
         versionName "0.0.0.1"
 
-//        setProperty("archivesBaseName", getApkName("EN_FRAMEWORK", versionName))
-//
-//        buildConfigField "String", 'GIT_BRANCH_NAME', '\"' + branchName + '\"'
+        setProperty("archivesBaseName", getApkName("EN_FRAMEWORK", versionName))
+
+        buildConfigField "String", 'GIT_BRANCH_NAME', '\"' + branchName + '\"'
     }
 
     lintOptions {
@@ -45,6 +45,7 @@ android {
 
 dependencies {
 
+    //OWN LIBRARY
     implementation project(':module_en_framework')
 
     //******************************************************
@@ -82,7 +83,7 @@ dependencies {
     //******************************************************
 
     //RDA-LOGGER
-    implementation "com.github.ardakaplan:RDALogger:2.0.1"
+    implementation "com.github.ardakaplan:RDALogger:2.0.2"
 
     //RDA TOAST
     implementation 'com.github.ardakaplan:RDAToast:53cd34ec48'
