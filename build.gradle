@@ -1,0 +1,40 @@
+apply from: 'script_git_branch_name_finder.gradle'
+
+buildscript {
+
+    ext.getApkName = { applicationName, applicationVersion ->
+
+        return "$branchName" + "-" + applicationVersion + "-" + applicationName
+    }
+
+    repositories {
+
+        google()
+
+        jcenter()
+
+    }
+
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:4.2.2'
+
+    }
+}
+
+allprojects {
+
+    repositories {
+
+        maven { url 'https://jitpack.io' }
+
+        google()
+
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+
+    delete rootProject.buildDir
+}

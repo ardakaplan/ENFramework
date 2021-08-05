@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_pure"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_50dp"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:gravity="center"
+        android:text="Tamam tuşunun çalışması için input alanının dolu olması gerekiyor"
+        android:textSize="@dimen/_25sp" />
+
+    <EditText
+        android:id="@+id/customDialog_editText_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="bir karekter girin" />
+
+    <Button
+        android:id="@+id/customDialog_button_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TAMAM" />
+
+    <Button
+        android:id="@+id/customDialog_button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANCEL" />
+
+</LinearLayout>

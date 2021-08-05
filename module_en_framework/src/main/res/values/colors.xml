@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="white_pure">#FFFFFF</color>
+
+    <color name="black_pure">#000000</color>
+
+    <color name="red_pure">#FF0000</color>
+
+    <color name="green_pure">#00FF00</color>
+
+    <color name="blue_pure">#0000FF</color>
+
+</resources>

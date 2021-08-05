@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.screens.MainActivity"
+    tools:ignore="HardcodedText">
+
+    <Button
+        android:id="@+id/recyclerViewTest_button_normalList"
+        style="@style/general_button"
+        android:text="NORMAL LIST" />
+
+    <Button
+        android:id="@+id/recyclerViewTest_button_swipeList"
+        style="@style/general_button"
+        android:text="SWIPE LIST" />
+
+</LinearLayout>

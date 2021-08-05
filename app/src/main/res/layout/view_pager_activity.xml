@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ButtonStyle,HardcodedText">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/viewPagerActivity_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="6dp"
+        app:tabIndicatorColor="@color/black_pure"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/pink"
+        app:tabTextColor="@color/blue_pure" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerActivity_viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewPagerActivity_linearLayout_buttonPart"
+        android:layout_below="@+id/viewPagerActivity_tabLayout" />
+
+    <LinearLayout
+        android:id="@+id/viewPagerActivity_linearLayout_buttonPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5dp">
+
+        <Button
+            android:id="@+id/viewPagerActivity_button_pageA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PAGE A" />
+
+        <Button
+            android:id="@+id/viewPagerActivity_button_pageB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_marginEnd="@dimen/_5dp"
+            android:layout_weight="1"
+            android:text="PAGE b" />
+
+        <Button
+            android:id="@+id/viewPagerActivity_button_pageC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PAGE c" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

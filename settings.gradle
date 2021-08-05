@@ -1,0 +1,3 @@
+rootProject.name = "ENFramework"
+include ':app'
+include ':module_en_framework'

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:ignore="HardcodedText">
+
+
+    <Button
+        android:id="@+id/fileTestActivity_button_saveTXTAppend"
+        style="@style/general_button"
+        android:text="TXT dosyasına kaydet -APPEND" />
+
+    <Button
+        android:id="@+id/fileTestActivity_button_saveTXT"
+        style="@style/general_button"
+        android:text="TXT dosyasına kaydet" />
+
+    <Button
+        android:id="@+id/fileTestActivity_button_readTXT"
+        style="@style/general_button"
+        android:text="TXT dosyasını oku" />
+
+    <EditText
+        android:id="@+id/fileTestActivity_editText_txtContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:hint="txt dosyasına kaydetmek için birşeyler yazın"
+        android:padding="10dp"
+        android:textSize="25sp" />
+
+</LinearLayout>
