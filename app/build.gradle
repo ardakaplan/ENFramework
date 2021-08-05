@@ -17,9 +17,9 @@ android {
         versionCode 1
         versionName "0.0.0.1"
 
-        setProperty("archivesBaseName", getApkName("EN_FRAMEWORK", versionName))
-
-        buildConfigField "String", 'GIT_BRANCH_NAME', '\"' + branchName + '\"'
+//        setProperty("archivesBaseName", getApkName("EN_FRAMEWORK", versionName))
+//
+//        buildConfigField "String", 'GIT_BRANCH_NAME', '\"' + branchName + '\"'
     }
 
     lintOptions {
