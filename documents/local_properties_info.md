@@ -37,3 +37,23 @@ belirt. Üretilen apk lar istediğin yere gelsin.
 custom_path_for_apks=C\:\\Users\\ardak\\Desktop\\APKS
 ```
 
+### aar_dir : LOCAL AAR KULLANIMI
+
+Geliştirme yaparken bağımlı kütüphanelerde de geliştirme söz konusu
+olabilir. Sözü geçen bu kütüphanelerde geliştirmeyi yapıp, versiyon
+çıkıp, çıkılan bu versiyonu uygulama içerisinde kullanmak; hem zaman
+kaybı hem de boşuna versiyon kirliliği (yanlış geliştirme olması
+durumunda) oluşturacaktır.
+
+Bu yüzden bu kütüphanelerde geliştirmeyi yapıp local aar almak daha
+mantıklıdır.
+
+Bu lokal aar nin nereye koyulacağı ve gerekli olduğunda nereden
+okunacağını bu alan belirler. Gerisini 'script_aar_deployment.gradle' ve
+'script_aar_usage' dosyaları halleder.
+
+
+```java
+aar_dir=C\:\\Users\\ardak\\Desktop\\AARS
+```
+

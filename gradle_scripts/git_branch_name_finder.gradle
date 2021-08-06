@@ -1,0 +1,22 @@
+apply from: 'gradle_scripts/common_methods.gradle'
+
+static def getGitRevParseInfo(what, localGitPath) {
+
+    def command = localGitPath + " rev-parse " + what + " HEAD"
+
+    command.execute().text.trim()
+}
+
+ext {
+
+    Properties localProperties = getLocalPropertiesFile()
+
+    branchName = "LOCAL_GIT_PATH_BULUNAMADI"
+
+    if (localProperties.containsKey('local_git_path')) {
+
+        branchName = getGitRevParseInfo("--abbrev-ref", localProperties.getProperty('local_git_path'))
+    }
+
+    println(ext.ANSI_WHITE + "BRANCH NAME : " + ext.ANSI_BLUE + branchName + ANSI_RESET)
+}

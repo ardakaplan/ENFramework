@@ -1,11 +1,8 @@
-apply from: 'script_git_branch_name_finder.gradle'
+apply from: 'gradle_scripts/git_branch_name_finder.gradle'
+apply from: 'gradle_scripts/aar_usage.gradle'
+apply from: 'gradle_scripts/library_versions.gradle'
 
 buildscript {
-
-    ext.getApkName = { applicationName, applicationVersion ->
-
-        return "$branchName" + "-" + applicationVersion + "-" + applicationName
-    }
 
     repositories {
 
