@@ -7,6 +7,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 import com.enerjisa.enframework.helpers.ENDeviceHelpers;
+import com.enerjisa.enframework.helpers.ENResourceHelpers;
 import com.enerjisa.enframework.helpers.ENStringHelpers;
 import com.enerjisa.enframework.helpers.ENViewHelpers;
 import com.enerjisa.enframework.ui.dialogs.ENProgressDialog;
@@ -22,16 +23,19 @@ import dagger.android.support.DaggerAppCompatActivity;
  */
 public abstract class ENActivity extends DaggerAppCompatActivity implements ActivityController {
 
-    private ENProgressDialog enProgressDialog;
+    protected ENProgressDialog enProgressDialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
 
-        setContentView(getLayoutId());
+        if (getLayoutId() != ENResourceHelpers.NO_LAYOUT) {
 
-        ButterKnife.bind(this);
+            setContentView(getLayoutId());
+
+            ButterKnife.bind(this);
+        }
 
         enProgressDialog = getProgressDialogInstance();
     }
